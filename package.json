@@ -1,0 +1,8 @@
+{
+  "name": "metamask-login",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/syyunn/metamask-login",
+  "author": "zachary <syyun@snu.ac.kr>",
+  "license": "MIT"
+}
