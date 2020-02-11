@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/syyunn/metamask-login",
   "author": "zachary <syyun@snu.ac.kr>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
 }
