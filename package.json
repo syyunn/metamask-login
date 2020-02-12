@@ -1,6 +1,6 @@
 {
   "name": "metamask-login",
-  "version": "yarn run format && git add -A src",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/syyunn/metamask-login",
   "author": "zachary <syyun@snu.ac.kr>",
@@ -18,13 +18,14 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "yarn test && yarn run lint",
+    "prepare": "yarn build",
+    "version": "yarn run format && git add -A src",
+    "preversion": "yarn run lint",
+    "postversion": "git push && git push --tags"
   },
   "files": [
     "lib /**/*"
-  ],
-  "prepublishOnly": "yarn test && yarn run lint",
-  "prepare": "yarn build",
-  "preversion": "yarn run lint",
-  "postversion": "git push && git push --tags"
+  ]
 }
