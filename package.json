@@ -1,6 +1,6 @@
 {
   "name": "metamask-login",
-  "version": "1.0.0",
+  "version": "yarn run format && git add -A src",
   "main": "index.js",
   "repository": "https://github.com/syyunn/metamask-login",
   "author": "zachary <syyun@snu.ac.kr>",
@@ -25,5 +25,5 @@
   ],
   "prepublishOnly": "yarn test && yarn run lint",
   "prepare": "yarn build",
-  "preversion": "yarn run lint"
+  "preversion": "yarn run lint",
 }
