@@ -26,4 +26,5 @@
   "prepublishOnly": "yarn test && yarn run lint",
   "prepare": "yarn build",
   "preversion": "yarn run lint",
+  "postversion": "git push && git push --tags"
 }
