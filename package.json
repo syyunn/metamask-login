@@ -23,5 +23,6 @@
   "files": [
     "lib /**/*"
   ],
-  "prepare": "yarn build"
+  "prepublishOnly": "yarn test && yarn run lint",
+  "prepare": "yarn build",
 }
