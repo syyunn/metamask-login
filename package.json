@@ -22,5 +22,6 @@
   },
   "files": [
     "lib /**/*"
-  ]
+  ],
+  "prepare": "yarn build"
 }
