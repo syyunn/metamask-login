@@ -1,9 +1,11 @@
 {
   "name": "metamask-login",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": "https://github.com/syyunn/metamask-login",
   "author": "zachary <syyun@snu.ac.kr>",
+  "description": "package-publishing-starter-template",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^25.1.2",
@@ -27,5 +29,9 @@
   },
   "files": [
     "lib /**/*"
+  ],
+  "keywords": [
+    "Hello",
+    "Greeter"
   ]
 }
