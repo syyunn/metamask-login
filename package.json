@@ -1,18 +1,37 @@
 {
   "name": "metamask-login",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": "https://github.com/syyunn/metamask-login",
   "author": "zachary <syyun@snu.ac.kr>",
+  "description": "package-publishing-starter-template",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1",
+    "ts-jest": "^25.2.0",
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit1",
-    "build": "tsc"
-  }
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "yarn test && yarn run lint",
+    "prepare": "yarn build",
+    "version": "yarn run format && git add -A src",
+    "preversion": "yarn run lint",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib /**/*"
+  ],
+  "keywords": [
+    "Hello",
+    "Greeter"
+  ]
 }
