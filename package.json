@@ -1,10 +1,10 @@
 {
-  "name": "metamask-login",
+  "name": "template-ts-npm-publishable-package",
   "version": "1.0.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "repository": "https://github.com/syyunn/metamask-login",
-  "author": "zachary <syyun@snu.ac.kr>",
+  "repository": "https://github.com/username/pakage-name",
+  "author": "author <auther@email.com>",
   "description": "package-publishing-starter-template",
   "license": "MIT",
   "devDependencies": {
@@ -31,7 +31,7 @@
     "lib /**/*"
   ],
   "keywords": [
-    "Hello",
-    "Greeter"
+    "Keyword1",
+    "Keyword2"
   ]
 }
